@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sum Form</title>
+    </head>
+    <style>
+        .form_sum{
+            margin: 40px auto;
+            width: 60vw;
+            height: 70vh;
+           
+        }
+        .form_sum form{
+            border: 2px solid rgba(136, 134, 240, 0.781);
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgb(165, 241, 241);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .form_sum form input:not(.btn-calc){
+            margin: 10px;
+            height: 40px;
+            font-size: 24px;
+            text-align: center;
+            border: none;
+            background: none;
+            border-bottom: 1px  rgb(87, 70, 150) solid;
+        }
+        .form_sum form input:not(.btn-calc):focus{
+            background: rgba(148, 144, 144, 0.329);
+        }
+        .form_sum h2{
+            color: rgb(202, 151, 10);
+            font-weight: 900;
+            
+        }
+        .btn-calc{
+            margin: 10px 0 0 0;
+            background: gold;
+            padding: 10px 25px;
+            border: 2px rgb(88, 64, 194) solid;
+            color: rgb(23, 16, 37);
+            font-weight: 900;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        .btn-calc:hover{
+            background: rgba(143, 133, 76, 0.521);
+            cursor: pointer;
+        }
+    </style>
+    <body style="background-color: rgb(241, 255, 181);">
+        <div class="form_sum">
+            <form action="Sum">
+                <input type="number" name="n1" placeholder="entrer un nombre" required>
+                <br><h2>+</h2>
+                <input type="number" name="n2" placeholder="entrer un nombre" required>
+                <input type="submit" value="calculer" class="btn-calc">
+            </form>
+        </div>
+    </body>
+</html>
